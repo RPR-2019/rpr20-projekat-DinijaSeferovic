@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="mainPaneUser" prefHeight="575.0" prefWidth="875.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.controllers.MainUserController">
+    <stylesheets>
+        <URL value="@../css/mainscreen.css" />
+    </stylesheets>
+    <center>
+        <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+            <children>
+                <Label text="Care Advice" textFill="#ff5757" textOverrun="CLIP">
+                    <font>
+                        <Font name="Century Gothic Bold" size="30.0" />
+                    </font>
+                    <padding>
+                        <Insets left="220.0" />
+                    </padding>
+                    <VBox.margin>
+                        <Insets top="30.0" />
+                    </VBox.margin>
+                </Label>
+                <Label text="Whether you're an experienced pet parent or a first-time adopter," textFill="#574e4e">
+                    <padding>
+                        <Insets left="60.0" />
+                    </padding>
+                    <font>
+                        <Font name="Arial Nova" size="16.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="5.0" top="20.0" />
+                    </VBox.margin>
+                </Label>
+                <Label text="it's important to keep your companion's health and happiness a top priority." textFill="#574e4e">
+                    <padding>
+                        <Insets left="60.0" />
+                    </padding>
+                    <font>
+                        <Font name="Arial Nova" size="16.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="5.0" />
+                    </VBox.margin>
+                </Label>
+                <Label text="When it comes to food we recommend purchasing high-quality pet food.  " textFill="#574e4e">
+                    <padding>
+                        <Insets left="60.0" />
+                    </padding>
+                    <font>
+                        <Font name="Arial Nova" size="15.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="5.0" top="10.0" />
+                    </VBox.margin>
+                </Label>
+                <Label text="Your veterinarian will be able to assess your new pet and determine the best diet." textFill="#574e4e">
+                    <padding>
+                        <Insets left="60.0" />
+                    </padding>
+                    <font>
+                        <Font name="Arial Nova" size="15.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="5.0" />
+                    </VBox.margin>
+                </Label>
+                <Label text="Factors such as age, activity level and health make a difference in what and " textFill="#574e4e">
+                    <padding>
+                        <Insets left="60.0" />
+                    </padding>
+                    <font>
+                        <Font name="Arial Nova" size="15.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="5.0" top="20.0" />
+                    </VBox.margin>
+                </Label>
+                <Label text="how much your pet should eat." textFill="#574e4e">
+                    <padding>
+                        <Insets left="60.0" />
+                    </padding>
+                    <font>
+                        <Font name="Arial Nova" size="15.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="5.0" />
+                    </VBox.margin>
+                </Label>
+                <Label text="If you are adopting a dog, keep in mind that dogs need exercise to burn calories, " textFill="#574e4e">
+                    <padding>
+                        <Insets left="60.0" />
+                    </padding>
+                    <font>
+                        <Font name="Arial Nova" size="15.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="5.0" />
+                    </VBox.margin>
+                </Label>
+                <Label text="stimulate their minds, and stay healthy. When it comes to grooming, you should" textFill="#574e4e">
+                    <padding>
+                        <Insets left="60.0" />
+                    </padding>
+                    <font>
+                        <Font name="Arial Nova" size="15.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="5.0" />
+                    </VBox.margin>
+                </Label>
+                <Label text="help keep your dog clean and reduce shedding with frequent brushing." textFill="#574e4e">
+                    <padding>
+                        <Insets left="60.0" />
+                    </padding>
+                    <font>
+                        <Font name="Arial Nova" size="15.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="10.0" />
+                    </VBox.margin>
+                </Label>
+                <Label text="Cats, on the other hand, don't need your help when it comes to grooming." textFill="#574e4e">
+                    <padding>
+                        <Insets left="60.0" />
+                    </padding>
+                    <font>
+                        <Font name="Arial Nova" size="15.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="5.0" />
+                    </VBox.margin>
+                </Label>
+                <Label text="They are very clean and rarely need a bath, but you should brush or comb your " textFill="#574e4e">
+                    <padding>
+                        <Insets left="60.0" />
+                    </padding>
+                    <font>
+                        <Font name="Arial Nova" size="15.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="5.0" />
+                    </VBox.margin>
+                </Label>
+                <Label text="cat regularly. They also need need a litter box, which should be placed in a quiet," textFill="#574e4e">
+                    <padding>
+                        <Insets left="60.0" />
+                    </padding>
+                    <font>
+                        <Font name="Arial Nova" size="15.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="5.0" />
+                    </VBox.margin>
+                </Label>
+                <Label text="accessible location. It needs to be cleaned at least once a day." textFill="#574e4e">
+                    <padding>
+                        <Insets left="60.0" />
+                    </padding>
+                    <font>
+                        <Font name="Arial Nova" size="15.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="5.0" />
+                    </VBox.margin>
+                </Label>
+                <Label text="Your pet should see the veterinarian at least once a year for an examination" textFill="#574e4e">
+                    <padding>
+                        <Insets left="60.0" />
+                    </padding>
+                    <font>
+                        <Font name="Arial Nova" size="15.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                    </VBox.margin>
+                </Label>
+                <Label text="and annual shots, and immediately if it is sick or injured. " textFill="#574e4e">
+                    <padding>
+                        <Insets left="60.0" />
+                    </padding>
+                    <font>
+                        <Font name="Arial Nova" size="15.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="5.0" />
+                    </VBox.margin>
+                </Label>
+                <Label text="Never give your cat medication that has not been prescribed by a veterinarian. " textFill="#574e4e">
+                    <padding>
+                        <Insets left="60.0" />
+                    </padding>
+                    <font>
+                        <Font name="Arial Nova" size="15.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="5.0" />
+                    </VBox.margin>
+                </Label>
+                <Label text="Good luck! We know you’ll be thrilled to have your new pet in your home." textFill="#574e4e">
+                    <padding>
+                        <Insets left="60.0" />
+                    </padding>
+                    <font>
+                        <Font name="Arial Nova" size="15.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="5.0" top="10.0" />
+                    </VBox.margin>
+                </Label>
+
+            </children>
+        </VBox>
+    </center>
+</BorderPane>

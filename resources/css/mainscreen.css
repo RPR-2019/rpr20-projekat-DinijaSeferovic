@@ -1,0 +1,47 @@
+.vboxmenu
+{
+    -fx-background-color : #FFE992;
+}
+
+.button
+{
+    -fx-background-color : #FFE992;
+}
+.button:hover{
+    -fx-background-color : #ffeeaf;
+}
+
+
+.item{
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 30;
+}
+
+.item-liked{
+    -fx-background-color: #FFD5D5;
+    -fx-background-radius: 30;
+}
+
+
+.shadow{
+    -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 10.0 , 0.0 , 0.0 ,10.0);
+}
+
+.transparent{
+    -fx-background-color: rgba(0,0,0,0);
+}
+
+.table-view {
+    -fx-border-color: #FFE992;
+    -fx-accent: #FFD5D5;
+}
+
+.table-view:focused {
+    -fx-faint-focus-color: #FFD5D5;
+}
+
+.table-view .column-header,
+.table-view .column-header .filler,
+.table-view .column-header-background .filler {
+    -fx-background-color: #FFE992;
+}

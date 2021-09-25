@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane stylesheets="@../css/mainscreen.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.controllers.ItemController">
+    <children>
+        <VBox alignment="TOP_CENTER" layoutX="63.0" layoutY="8.0" prefHeight="215.0" prefWidth="225.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+            <Label fx:id="urgentLabel" textFill="RED">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="11.0" />
+               </font>
+            </Label>
+                  <Label fx:id="nameLabel" alignment="CENTER" prefHeight="50.0" prefWidth="188.0" text="Name">
+                      <font>
+                          <Font name="Cambria" size="24.0" />
+                      </font>
+               <VBox.margin>
+                  <Insets top="3.0" />
+               </VBox.margin>
+                  </Label>
+                <ImageView fx:id="img" fitHeight="115.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/dogbreeds/beagle.jpg" />
+                    </image>
+                </ImageView>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label fx:id="breedLabel" text="Breed">
+                     <font>
+                        <Font name="Cambria Bold" size="15.0" />
+                     </font></Label>
+                  <HBox alignment="CENTER_LEFT" prefHeight="28.0" prefWidth="226.0">
+                     <children>
+                        <Label fx:id="ageLabel" prefHeight="10.0" prefWidth="135.0" text="Age">
+                           <font>
+                              <Font name="Cambria Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="heartButton" mnemonicParsing="false" onMouseClicked="#clickHeart" style="-fx-background-color: #FFFFFF;">
+                            <graphic>
+                                <ImageView fitHeight="42.0" fitWidth="30" preserveRatio="true">
+                                    <Image url="@../img/likeicon.png" />
+                                </ImageView>
+                            </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </HBox>
+                        <Label fx:id="sexLabel" prefHeight="49.0" prefWidth="101.0" text="Sex">
+                            <font>
+                                <Font name="Cambria Bold" size="15.0" />
+                            </font>
+                        </Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="30.0" />
+               </VBox.margin>
+            </VBox>
+            </children>
+        </VBox>
+    </children>
+    <styleClass>
+        <String fx:value="item" />
+        <String fx:value="shadow" />
+    </styleClass>
+</AnchorPane>

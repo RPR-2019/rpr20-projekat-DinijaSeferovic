@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="mainPaneUser" prefHeight="575.0" prefWidth="875.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.controllers.MainUserController">
+   <stylesheets>
+      <URL value="@../css/mainscreen.css" />
+   </stylesheets>
+   <left>
+      <VBox fx:id="vboxmenu" prefHeight="200.0" prefWidth="100.0" styleClass="vboxmenu" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="218.0" fitWidth="240.0">
+               <image>
+                  <Image url="@../img/logopet.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="mniAcc" alignment="BASELINE_LEFT" graphicTextGap="15.0" onAction="#handleButtonProfile" prefHeight="51.0" prefWidth="255.0" text="PROFILE" textFill="#8b6a56">
+               <graphic>
+                  <ImageView fitHeight="30" fitWidth="30" preserveRatio="true">
+                     <Image url="@../img/accicon.png" />
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font name="Verdana Pro Semibold" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="mniFind" alignment="BASELINE_LEFT" graphicTextGap="15.0" onAction="#handleButtonDiscover" prefHeight="51.0" prefWidth="255.0" text="DISCOVER" textFill="#8b6a56">
+               <graphic>
+                  <ImageView fitHeight="30" fitWidth="30" preserveRatio="true">
+                     <Image url="@../img/findicon.png" />
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font name="Verdana Pro Semibold" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="mniLike" alignment="BASELINE_LEFT" graphicTextGap="15.0" onAction="#handleButtonLiked" prefHeight="51.0" prefWidth="255.0" text="LIKED" textFill="#8b6a56">
+               <graphic>
+                  <ImageView fitHeight="30" fitWidth="30" preserveRatio="true">
+                     <Image url="@../img/hearticon.png" />
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font name="Verdana Pro Semibold" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="mniCheck" alignment="BASELINE_LEFT" graphicTextGap="15.0" onAction="#handleButtonProgress" prefHeight="51.0" prefWidth="255.0" text="PROGRESS" textFill="#8b6a56">
+               <graphic>
+                  <ImageView fitHeight="30" fitWidth="30" preserveRatio="true">
+                     <Image url="@../img/checkicon.png" />
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font name="Verdana Pro Semibold" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="mniAdd" alignment="BASELINE_LEFT" graphicTextGap="15.0" onAction="#handleButtonAdd" prefHeight="51.0" prefWidth="255.0" text="ADD" textFill="#8b6a56">
+               <graphic>
+                  <ImageView fitHeight="30" fitWidth="30" preserveRatio="true">
+                     <Image url="@../img/addicon.png" />
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font name="Verdana Pro Semibold" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="mniCare" alignment="BASELINE_LEFT" graphicTextGap="15.0" onAction="#handleButtonCare" prefHeight="51.0" prefWidth="255.0" text="CARE" textFill="#8b6a56">
+               <graphic>
+                  <ImageView fitHeight="30" fitWidth="30" preserveRatio="true">
+                     <Image url="@../img/careicon.png" />
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font name="Verdana Pro Semibold" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="mniOut" alignment="BASELINE_LEFT" graphicTextGap="15.0" onAction="#handleButtonLogout1" prefHeight="51.0" prefWidth="255.0" text="LOG OUT" textFill="#8b6a56">
+               <graphic>
+                  <ImageView fitHeight="30" fitWidth="30" preserveRatio="true">
+                     <Image url="@../img/logouticon.png" />
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font name="Verdana Pro Semibold" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="mniHelp" alignment="BASELINE_LEFT" graphicTextGap="15.0" onAction="#handleButtonHelp1" prefHeight="51.0" prefWidth="255.0" text="HELP" textFill="#8b6a56">
+               <graphic>
+                  <ImageView fitHeight="30" fitWidth="30" preserveRatio="true">
+                     <Image url="@../img/helpicon.png" />
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font name="Verdana Pro Semibold" size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Welcome" textFill="#ff5757" textOverrun="CLIP">
+               <font>
+                  <Font name="Century Gothic Bold" size="30.0" />
+               </font>
+               <padding>
+                  <Insets left="220.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Thank you for joining us. You are one step closer to helping our shelter," textFill="#574e4e">
+               <padding>
+                  <Insets left="60.0" />
+               </padding>
+               <font>
+                  <Font name="Arial Nova" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" top="20.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="animals and community by adopting a friend for life." textFill="#574e4e">
+               <padding>
+                  <Insets left="60.0" />
+               </padding>
+               <font>
+                  <Font name="Arial Nova" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Fill out your profile if you haven't already, find a pet to your liking and set an" textFill="#574e4e">
+               <padding>
+                  <Insets left="60.0" />
+               </padding>
+               <font>
+                  <Font name="Arial Nova" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="appointment to meet with us and your favourite pets." textFill="#574e4e">
+               <padding>
+                  <Insets left="60.0" />
+               </padding>
+               <font>
+                  <Font name="Arial Nova" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="By doing so and adopting a pet you really make an impact since each year a" textFill="#574e4e">
+               <padding>
+                  <Insets left="60.0" />
+               </padding>
+               <font>
+                  <Font name="Arial Nova" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" top="20.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="few thousands of adoptable pets are euthanized because too many pets come" textFill="#574e4e">
+               <padding>
+                  <Insets left="60.0" />
+               </padding>
+               <font>
+                  <Font name="Arial Nova" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="into shelters and too few people consider adoption when looking for a pet." textFill="#574e4e">
+               <padding>
+                  <Insets left="60.0" />
+               </padding>
+               <font>
+                  <Font name="Arial Nova" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Take a loving animal home and open up shelter space for another" textFill="#574e4e">
+               <padding>
+                  <Insets left="60.0" />
+               </padding>
+               <font>
+                  <Font name="Arial Nova" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="animal who might desperately need it." textFill="#574e4e">
+               <padding>
+                  <Insets left="60.0" />
+               </padding>
+               <font>
+                  <Font name="Arial Nova" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="2.0" />
+               </VBox.margin>
+            </Label>
+            <ImageView fitHeight="290.0" fitWidth="290.0" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets left="170.0" />
+               </VBox.margin>
+               <image>
+                  <Image url="@../img/takemehome.png" />
+               </image>
+            </ImageView>
+
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

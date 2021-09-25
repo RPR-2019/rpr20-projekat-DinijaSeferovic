@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="875.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.controllers.LoginController">
+    <stylesheets>
+        <URL value="@../css/loginscreen.css" />
+    </stylesheets>
+    <children>
+      <GridPane>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="476.7999755859375" minWidth="431.8" prefWidth="446.8" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="479.2000122070313" minWidth="429.2" prefWidth="429.2" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <BorderPane fx:id="layer1" prefHeight="200.0" prefWidth="200.0">
+               <top>
+                        <Label fx:id="b2" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" text="Sign In To Love FurEver" textAlignment="CENTER" textFill="#8b6a56" BorderPane.alignment="CENTER">
+                            <font>
+                                <Font name="Arial" size="20.0" />
+                            </font>
+                     <padding>
+                        <Insets bottom="40.0" top="80.0" />
+                     </padding>
+                        </Label>
+               </top>
+               <center>
+                  <VBox BorderPane.alignment="CENTER">
+                     <children>
+                              <TextField fx:id="usernameLogField" prefHeight="32.0" promptText="Username">
+                           <VBox.margin>
+                              <Insets bottom="20.0" left="40.0" right="40.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <PasswordField fx:id="passLogField" prefHeight="32.0" promptText="Password">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="40.0" right="40.0" />
+                           </VBox.margin>
+                        </PasswordField>
+                        <Label fx:id="loginInfo">
+                           <VBox.margin>
+                              <Insets left="40.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </center>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <bottom>
+                  <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button fx:id="btnsignin" alignment="CENTER" contentDisplay="CENTER" onAction="#signinAction" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #ffe992; -fx-background-radius: 200; -fx-text-fill: #8b6a56;" text="SIGN IN">
+                           <VBox.margin>
+                              <Insets bottom="-20.0" left="130.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets bottom="12.0" top="12.0" />
+                           </padding></Button>
+                        <ImageView fitHeight="228.0" fitWidth="291.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/adoptyellowy.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets bottom="8.0" left="40.0" top="20.0" />
+                           </VBox.margin>
+                        </ImageView>
+                     </children>
+                  </VBox>
+               </bottom>
+            </BorderPane>
+            <BorderPane fx:id="layersignup" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+               <top>
+                        <Label fx:id="a2" alignment="CENTER" contentDisplay="CENTER" text="Create Account" textAlignment="CENTER" textFill="#8b6a56" BorderPane.alignment="CENTER">
+                            <font>
+                                <Font name="Arial" size="20.0" />
+                            </font>
+                     <padding>
+                        <Insets bottom="20.0" top="50.0" />
+                     </padding>
+                        </Label>
+               </top>
+               <center>
+                  <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                     <children>
+
+                                    <TextField fx:id="nameRegField" focusTraversable="false" prefHeight="35.0" promptText="Full name">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="35.0" right="40.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Label fx:id="nameRegInfo">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="35.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="usernameRegField" focusTraversable="false" prefHeight="35.0" promptText="Username">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="35.0" right="40.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Label fx:id="usernameRegInfo">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="35.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="11.0" />
+                           </font></Label>
+                              <TextField fx:id="emailRegField" focusTraversable="false" prefHeight="35.0" promptText="Email">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="35.0" right="40.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Label fx:id="emailRegInfo">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="35.0" />
+                           </VBox.margin>
+                        </Label>
+                        <PasswordField fx:id="passRegField" focusTraversable="false" prefHeight="35.0" promptText="Password">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="35.0" right="40.0" />
+                           </VBox.margin>
+                        </PasswordField>
+                        <Label fx:id="passRegInfo">
+                           <VBox.margin>
+                              <Insets left="35.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </center>
+               <bottom>
+                  <VBox BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets />
+                     </BorderPane.margin>
+                     <children>
+                              <Button fx:id="btnsignup" alignment="CENTER" contentDisplay="CENTER" onAction="#signupAction" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #ffe992; -fx-background-radius: 200; -fx-text-fill: #8b6a56;" text="SIGN UP">
+                           <VBox.margin>
+                              <Insets left="130.0" />
+                           </VBox.margin>
+                        </Button>
+                        <ImageView fitHeight="240.0" fitWidth="270.0" pickOnBounds="true" preserveRatio="true">
+                         <Image url="@../img/adoptpinky.png" />
+                           <VBox.margin>
+                              <Insets left="50.0" />
+                           </VBox.margin>
+                        </ImageView>
+                     </children>
+                  </VBox>
+               </bottom>
+               <padding>
+                  <Insets right="50.0" />
+               </padding>
+            </BorderPane>
+         </children>
+      </GridPane>
+      <AnchorPane fx:id="layer2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="380.0" style="-fx-background-color: #ffe992;" StackPane.alignment="CENTER_LEFT">
+         <children>
+            <Label fx:id="s2" alignment="CENTER" contentDisplay="CENTER" layoutX="65.0" layoutY="165.0" prefHeight="23.0" text="Please sign in with your account details." textAlignment="CENTER" textFill="#8b6a56">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="s3" alignment="CENTER" contentDisplay="CENTER" layoutX="105.0" layoutY="188.0" prefHeight="23.0" text="If you don't have an account, " textAlignment="CENTER" textFill="#8b6a56">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="s4" alignment="CENTER" contentDisplay="CENTER" layoutX="80.0" layoutY="212.0" prefHeight="23.0" text="click here to create one and sign up" textAlignment="CENTER" textFill="#8b6a56">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="signin" layoutX="120.0" layoutY="300.0" onMouseClicked="#btn" prefHeight="45.0" prefWidth="140.0" style="-fx-background-color: #ffffff; -fx-border-radius: 200; -fx-background-radius: 200; -fx-text-fill: #8b6a56;" text="SIGN IN">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="signup" layoutX="120.0" layoutY="300.0" onMouseClicked="#btn2" prefHeight="45.0" prefWidth="140.0" style="-fx-background-color: #ffffff; -fx-border-radius: 200; -fx-background-radius: 200; -fx-text-fill: #8b6a56;" text="SIGN UP">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="s1" alignment="CENTER" contentDisplay="CENTER" layoutX="80.0" layoutY="112.0" prefHeight="39.0" prefWidth="211.0" text="Welcome !" textFill="#8b6a56">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="l1" alignment="CENTER" contentDisplay="CENTER" layoutX="80.0" layoutY="112.0" prefHeight="39.0" prefWidth="211.0" text="Hello, and Welcome!" textFill="#8b6a56">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="l2" alignment="CENTER" contentDisplay="CENTER" layoutX="35.0" layoutY="165.0" prefHeight="17.0" text="Enter your personal details and create an account" textAlignment="CENTER" textFill="#8b6a56">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="l3" alignment="CENTER" contentDisplay="CENTER" layoutX="90.0" layoutY="188.0" prefHeight="17.0" text="If you already have an account," textAlignment="CENTER" textFill="#8b6a56">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="l4" alignment="CENTER" contentDisplay="CENTER" layoutX="100.0" layoutY="212.0" prefHeight="17.0" text="please click here and sign in" textAlignment="CENTER" textFill="#8b6a56">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="350.0" fitWidth="380.0" layoutY="380.0" pickOnBounds="true" preserveRatio="true">
+               <Image url="@../img/pawsyellow.png" />
+               <rotationAxis>
+                  <Point3D />
+               </rotationAxis>
+            </ImageView>
+         </children>
+      </AnchorPane>
+    </children>
+</StackPane>

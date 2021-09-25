@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="875.0" style="-fx-background-color: #FFFFFF;" stylesheets="@../css/mainscreen.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.controllers.ProgressController">
+    <children>
+        <Label text="Set your appointment" textFill="#ff5757" textOverrun="CLIP">
+            <font>
+                <Font name="Century Gothic Bold" size="30.0" />
+            </font>
+            <padding>
+                <Insets left="160.0" />
+            </padding>
+            <VBox.margin>
+                <Insets top="-0.0" />
+            </VBox.margin>
+        </Label>
+        <Label fx:id="firstLabel" textFill="#574e4e">
+            <padding>
+                <Insets bottom="20.0" left="70.0" />
+            </padding>
+            <font>
+                <Font name="Arial Nova" size="14.0" />
+            </font>
+         <VBox.margin>
+            <Insets top="50.0" />
+         </VBox.margin>
+        </Label>
+      <DatePicker fx:id="appointmentDate" onAction="#getDate">
+         <VBox.margin>
+            <Insets left="70.0" top="10.0" />
+         </VBox.margin>
+         <tooltip>
+            <Tooltip text="Select date" />
+         </tooltip>
+      </DatePicker>
+        <Label text="Everyone here in our pet shelter would really appreciate if you would respect our time" textFill="#574e4e">
+            <padding>
+                <Insets left="70.0" />
+            </padding>
+            <font>
+                <Font name="Arial Nova" size="14.0" />
+            </font>
+            <VBox.margin>
+                <Insets top="40.0" />
+            </VBox.margin>
+        </Label>
+        <Label text="and not be late to the appointment." textFill="#574e4e">
+            <padding>
+                <Insets left="70.0" />
+            </padding>
+            <font>
+                <Font name="Arial Nova" size="14.0" />
+            </font>
+            <VBox.margin>
+                <Insets top="5.0" />
+            </VBox.margin>
+        </Label>
+        <Label text="If you want to change the appointment date, please do that" textFill="#574e4e">
+            <padding>
+                <Insets left="70.0" />
+            </padding>
+            <font>
+                <Font name="Arial Nova" size="14.0" />
+            </font>
+            <VBox.margin>
+                <Insets top="10.0" />
+            </VBox.margin>
+        </Label>
+        <Label text="one day prior the selected one." textFill="#574e4e">
+            <padding>
+                <Insets left="70.0" />
+            </padding>
+            <font>
+                <Font name="Arial Nova" size="14.0" />
+            </font>
+            <VBox.margin>
+                <Insets top="5.0" />
+            </VBox.margin>
+        </Label>
+        <Label text="We welcome our visitors every day from 12:00 to 15:00." textFill="#574e4e">
+            <padding>
+                <Insets left="70.0" />
+            </padding>
+            <font>
+                <Font name="Arial Nova Bold" size="14.0" />
+            </font>
+            <VBox.margin>
+                <Insets top="5.0" />
+            </VBox.margin>
+        </Label>
+    </children>
+    <padding>
+        <Insets top="30.0" />
+    </padding>
+</VBox>

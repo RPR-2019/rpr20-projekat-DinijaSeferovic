@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="vboxDiscover" prefHeight="575.0" prefWidth="775.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.controllers.DiscoverController">
+   <children>
+      <Label text="Which kind of a friend" textFill="#ff5757" textOverrun="CLIP">
+         <font>
+            <Font name="Century Gothic Bold" size="30.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="60.0" />
+         </VBox.margin>
+      </Label>
+       <Label text="are you looking for?" textFill="#ff5757" textOverrun="CLIP">
+           <font>
+               <Font name="Century Gothic Bold" size="30.0" />
+           </font>
+           <VBox.margin>
+               <Insets bottom="30.0" left="75.0" />
+           </VBox.margin>
+       </Label>
+      <HBox prefHeight="100.0" prefWidth="200.0" spacing="35.0">
+         <children>
+            <Button fx:id="dogsButton" mnemonicParsing="false" onAction="#dogsDiscover" style="-fx-background-color: #FFFFFF;">
+                <graphic>
+                    <ImageView fitHeight="200" fitWidth="200" preserveRatio="true">
+                        <Image url="@../img/dogs.png" />
+                    </ImageView>
+                </graphic>
+               <tooltip>
+                  <Tooltip text="See all dogs" />
+               </tooltip>
+            </Button>
+            <Button fx:id="catsButton" mnemonicParsing="false" onAction="#catsDiscover" style="-fx-background-color: #FFFFFF;">
+                <graphic>
+                    <ImageView fitHeight="200" fitWidth="200" preserveRatio="true">
+                        <Image url="@../img/cats.png" />
+                    </ImageView>
+                </graphic>
+               <tooltip>
+                  <Tooltip text="See all cats" />
+               </tooltip>
+            </Button>
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="bothButton" mnemonicParsing="false" onAction="#bothDiscover" style="-fx-background-color: #FFFFFF;">
+                <graphic>
+                    <ImageView fitHeight="200" fitWidth="200" preserveRatio="true">
+                        <Image url="@../img/both.png" />
+                    </ImageView>
+                </graphic>
+               <tooltip>
+                  <Tooltip text="See all pets" />
+               </tooltip>
+            </Button>
+         </children>
+         <padding>
+            <Insets left="125.0" />
+         </padding>
+      </HBox>
+   </children>
+   <padding>
+      <Insets left="80.0" top="30.0" />
+   </padding>
+</VBox>

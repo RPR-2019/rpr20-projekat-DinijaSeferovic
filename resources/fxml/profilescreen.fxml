@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="875.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.controllers.ProfileController">
+   <stylesheets>
+      <URL value="@../css/mainscreen.css" />
+   </stylesheets>
+   <children>
+      <Label text="Set the profile" textFill="#ff5757" textOverrun="CLIP">
+         <font>
+            <Font name="Century Gothic Bold" size="30.0" />
+         </font>
+         <padding>
+            <Insets left="70.0" />
+         </padding>
+         <VBox.margin>
+            <Insets left="150.0" top="-0.0" />
+         </VBox.margin>
+      </Label>
+      <Label text="Please fill out the profile and let us to help you find a pet that matches your lifestyle " textFill="#574e4e">
+         <padding>
+            <Insets bottom="20.0" left="70.0" top="10.0" />
+         </padding>
+         <font>
+            <Font name="Arial Nova" size="14.0" />
+         </font>
+      </Label>
+      <Label text="How many hours a day do you spend working?" textFill="#574e4e">
+         <padding>
+            <Insets left="70.0" />
+         </padding>
+         <font>
+            <Font name="Arial Nova" size="16.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="20.0" />
+         </VBox.margin>
+      </Label>
+      <Slider fx:id="profileSlider" blockIncrement="1.0" majorTickUnit="1.0" max="15.0" minorTickCount="1" showTickLabels="true" showTickMarks="true">
+         <VBox.margin>
+            <Insets bottom="20.0" left="70.0" right="285.0" />
+         </VBox.margin>
+      </Slider>
+      <Label text="Do you work from home?" textFill="#574e4e">
+         <padding>
+            <Insets left="70.0" />
+         </padding>
+         <font>
+            <Font name="Arial Nova" size="16.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="20.0" />
+         </VBox.margin>
+      </Label>
+      <HBox prefHeight="16.0" prefWidth="805.0">
+         <children>
+            <RadioButton fx:id="yesHomeRadio" mnemonicParsing="false" text="Yes" textFill="#574e4e">
+               <toggleGroup>
+                  <ToggleGroup fx:id="tgHome" />
+               </toggleGroup></RadioButton>
+            <RadioButton fx:id="noHomeRadio" mnemonicParsing="false" text="No" textFill="#574e4e" toggleGroup="$tgHome">
+               <HBox.margin>
+                  <Insets left="40.0" />
+               </HBox.margin>
+            </RadioButton>
+         </children>
+         <VBox.margin>
+            <Insets bottom="20.0" left="70.0" />
+         </VBox.margin>
+      </HBox>
+      <Label text="How many people live in your home?" textFill="#574e4e">
+         <padding>
+            <Insets left="70.0" />
+         </padding>
+         <font>
+            <Font name="Arial Nova" size="16.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="20.0" />
+         </VBox.margin>
+      </Label>
+      <Spinner fx:id="profileSpinner" min="1" max="20" amountToStepBy="1" editable="true">
+         <VBox.margin>
+            <Insets bottom="20.0" left="70.0" />
+         </VBox.margin>
+      </Spinner>
+      <Label text="Do you have a yard?" textFill="#574e4e">
+         <padding>
+            <Insets left="70.0" />
+         </padding>
+         <font>
+            <Font name="Arial Nova" size="16.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="20.0" />
+         </VBox.margin>
+      </Label>
+      <HBox prefHeight="18.0" prefWidth="875.0">
+         <children>
+            <RadioButton fx:id="yesYardRadio" mnemonicParsing="false" text="Yes" textFill="#574e4e">
+               <toggleGroup>
+                  <ToggleGroup fx:id="tgYard" />
+               </toggleGroup></RadioButton>
+            <RadioButton fx:id="noYardRadio" mnemonicParsing="false" text="No" textFill="#574e4e" toggleGroup="$tgYard">
+               <HBox.margin>
+                  <Insets left="40.0" />
+               </HBox.margin>
+            </RadioButton>
+         </children>
+         <VBox.margin>
+            <Insets bottom="20.0" left="70.0" />
+         </VBox.margin>
+      </HBox>
+      <Label text="Do you already have any pets?" textFill="#574e4e">
+         <padding>
+            <Insets left="70.0" />
+         </padding>
+         <font>
+            <Font name="Arial Nova" size="16.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="20.0" />
+         </VBox.margin>
+      </Label>
+      <HBox prefHeight="18.0" prefWidth="875.0">
+         <children>
+            <RadioButton fx:id="yesPetsRadio" mnemonicParsing="false" text="Yes" textFill="#574e4e">
+               <toggleGroup>
+                  <ToggleGroup fx:id="tgPets" />
+               </toggleGroup></RadioButton>
+            <RadioButton fx:id="noPetsRadio" mnemonicParsing="false" text="No" textFill="#574e4e" toggleGroup="$tgPets">
+               <HBox.margin>
+                  <Insets left="40.0" />
+               </HBox.margin>
+            </RadioButton>
+         </children>
+         <VBox.margin>
+            <Insets bottom="20.0" left="70.0" />
+         </VBox.margin>
+      </HBox>
+      <Button fx:id="acceptProfileButton" mnemonicParsing="false" onAction="#acceptAction" style="-fx-background-radius: 30;" text="Accept">
+         <VBox.margin>
+            <Insets left="65.0" top="-7.0" />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="7.0" left="50.0" right="50.0" top="7.0" />
+         </padding>
+      </Button>
+   </children>
+   <padding>
+      <Insets top="30.0" />
+   </padding>
+</VBox>

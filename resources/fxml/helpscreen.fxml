@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="875.0" style="-fx-background-color: #FFFFFF;" stylesheets="@../css/mainscreen.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.controllers.HelpController">
+    <children>
+        <Label text="Help" textFill="#ff5757" textOverrun="CLIP">
+            <font>
+                <Font name="Century Gothic Bold" size="30.0" />
+            </font>
+            <padding>
+                <Insets left="250.0" />
+            </padding>
+            <VBox.margin>
+                <Insets top="-0.0" />
+            </VBox.margin>
+        </Label>
+        <Label fx:id="label1" textFill="#574e4e">
+            <padding>
+                <Insets left="40.0" />
+            </padding>
+            <font>
+                <Font name="Arial Nova" size="14.0" />
+            </font>
+            <VBox.margin>
+                <Insets top="50.0" />
+            </VBox.margin>
+        </Label>
+        <Label fx:id="label2" textFill="#574e4e">
+            <padding>
+                <Insets left="40.0" />
+            </padding>
+            <font>
+                <Font name="Arial Nova" size="14.0" />
+            </font>
+            <VBox.margin>
+                <Insets top="5.0" />
+            </VBox.margin>
+        </Label>
+        <Label fx:id="label3" textFill="#574e4e">
+            <padding>
+                <Insets left="40.0" />
+            </padding>
+            <font>
+                <Font name="Arial Nova" size="14.0" />
+            </font>
+            <VBox.margin>
+                <Insets top="5.0" />
+            </VBox.margin>
+        </Label>
+        <Label fx:id="label4" textFill="#574e4e">
+            <padding>
+                <Insets left="40.0" />
+            </padding>
+            <font>
+                <Font name="Arial Nova" size="14.0" />
+            </font>
+            <VBox.margin>
+                <Insets top="5.0" />
+            </VBox.margin>
+        </Label>
+        <Label fx:id="label5" textFill="#574e4e">
+            <padding>
+                <Insets left="40.0" />
+            </padding>
+            <font>
+                <Font name="Arial Nova" size="14.0" />
+            </font>
+            <VBox.margin>
+                <Insets top="5.0" />
+            </VBox.margin>
+        </Label>
+        <Label fx:id="label6" textFill="#574e4e">
+            <padding>
+                <Insets left="40.0" />
+            </padding>
+            <font>
+                <Font name="Arial Nova" size="14.0" />
+            </font>
+            <VBox.margin>
+                <Insets top="5.0" />
+            </VBox.margin>
+        </Label>
+      <Label fx:id="label7" textFill="#574e4e">
+         <padding>
+            <Insets left="40.0" />
+         </padding>
+         <VBox.margin>
+            <Insets top="5.0" />
+         </VBox.margin>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+    </children>
+    <padding>
+        <Insets top="30.0" />
+    </padding>
+</VBox>

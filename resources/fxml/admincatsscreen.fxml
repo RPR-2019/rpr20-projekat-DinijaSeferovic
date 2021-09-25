@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:id="mainGridAdminCats" prefHeight="575.0" prefWidth="775.0" style="-fx-background-color: #FFFFFF;" stylesheets="@../css/mainscreen.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.controllers.AdminCatsController">
+
+    <children>
+        <VBox alignment="CENTER">
+            <children>
+                <Label text="Cats in the database" textFill="#ff5757" textOverrun="CLIP">
+                    <font>
+                        <Font name="Century Gothic Bold" size="30.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                    <padding>
+                        <Insets top="30.0" />
+                    </padding>
+                </Label>
+            <Button fx:id="addCats" mnemonicParsing="false" onAction="#addCatsAction" style="-fx-background-radius: 30;" text="ADD" textFill="#8b6a56">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+                <ScrollPane fx:id="scrollAdminCats" prefHeight="495.0" prefWidth="700.0" style="-fx-background: #FFFFFF;" styleClass="transparent">
+                    <content>
+                        <GridPane fx:id="gridAdminCats" alignment="CENTER">
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                        </GridPane>
+                    </content>
+                    <VBox.margin>
+                        <Insets left="25.0" right="2.0" />
+                    </VBox.margin></ScrollPane>
+            </children>
+        </VBox>
+    </children>
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+</GridPane>
